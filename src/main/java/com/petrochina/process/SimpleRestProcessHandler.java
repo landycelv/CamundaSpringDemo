@@ -13,10 +13,8 @@ import java.util.List;
 @RestController
 @RequestMapping("/simpleRestProcessHandler")
 public interface SimpleRestProcessHandler {
-
-
-	@ApiOperation(value = "流程提交", notes = "流程提交")
-	@RequestMapping(value = "/simpleStartProcess", method = RequestMethod.POST)
-	public List<TaskDto> simpleStartProcess(@RequestBody CommonProcessRequest commonProcessRequest, HttpServletRequest request) throws Exception;
+    @ApiOperation(value = "流程提交", notes = "流程提交")
+    @RequestMapping(value = "/simpleStartProcess", method = RequestMethod.POST)
+    public List<TaskDto> simpleStartProcess(@RequestBody CommonProcessRequest commonProcessRequest, HttpServletRequest request) throws Exception;
 
 }

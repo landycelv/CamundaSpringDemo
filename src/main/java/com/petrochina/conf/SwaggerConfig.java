@@ -19,14 +19,14 @@ import java.util.List;
 
 @Configuration
 @EnableSwagger2
-@ComponentScan(basePackages = {"org.camunda.bpm.demo"})
+@ComponentScan(basePackages = {"com.petrochina"})
 public class SwaggerConfig {
     @Bean
     public Docket swaggerPluggin() {
         return new Docket(DocumentationType.SWAGGER_2)
         		.globalOperationParameters(createGlobalParams())
                 .select()
-                .apis(RequestHandlerSelectors.basePackage("org.camunda.bpm.demo"))
+                .apis(RequestHandlerSelectors.basePackage("com.petrochina"))
                 .paths(PathSelectors.any())
                 .build()
                 .apiInfo(new ApiInfoBuilder()
