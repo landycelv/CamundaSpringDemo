@@ -81,7 +81,7 @@
 }
 /* line 72, node_modules\bpmn-js-properties-panel\styles\properties.less */
 .bpp-properties-panel [contenteditable]:before {
-  content: "\feff ";
+  content: "\feff";
 }
 /* line 77, node_modules\bpmn-js-properties-panel\styles\properties.less */
 .bpp-properties-panel [disabled] {
@@ -330,23 +330,24 @@ label.bpp-hidden {
 .bpp-table-row > label.bpp-table-row-columns-2,
 .bpp-table-row > input.bpp-table-row-columns-2 {
   width: 50%;
+  box-sizing: border-box;
 }
-/* line 271, node_modules\bpmn-js-properties-panel\styles\properties.less */
+/* line 272, node_modules\bpmn-js-properties-panel\styles\properties.less */
 .bpp-table-row > label.bpp-table-row-columns-2.bpp-table-row-removable,
 .bpp-table-row > input.bpp-table-row-columns-2.bpp-table-row-removable {
   width: calc(50% - 12px);
 }
-/* line 274, node_modules\bpmn-js-properties-panel\styles\properties.less */
+/* line 275, node_modules\bpmn-js-properties-panel\styles\properties.less */
 .bpp-table-row > label.bpp-table-row-columns-2:nth-child(2),
 .bpp-table-row > input.bpp-table-row-columns-2:nth-child(2) {
   border-left: none;
 }
-/* line 280, node_modules\bpmn-js-properties-panel\styles\properties.less */
+/* line 281, node_modules\bpmn-js-properties-panel\styles\properties.less */
 .bpp-table-row > button {
   border-left: none;
   position: static;
 }
-/* line 286, node_modules\bpmn-js-properties-panel\styles\properties.less */
+/* line 287, node_modules\bpmn-js-properties-panel\styles\properties.less */
 .bpp-properties-static {
   margin-bottom: 0;
   margin-top: 0;
@@ -356,12 +357,12 @@ label.bpp-hidden {
   font: 13.3333px Arial;
   width: 100%;
 }
-/* line 296, node_modules\bpmn-js-properties-panel\styles\properties.less */
+/* line 297, node_modules\bpmn-js-properties-panel\styles\properties.less */
 .bpp-entry-link {
   cursor: pointer;
   color: #52B415;
 }
-/* line 301, node_modules\bpmn-js-properties-panel\styles\properties.less */
+/* line 302, node_modules\bpmn-js-properties-panel\styles\properties.less */
 .bpp-icon-warning:before {
   font-family: "bpmn-js-pp";
   font-style: normal;
@@ -377,17 +378,17 @@ label.bpp-hidden {
   -moz-osx-font-smoothing: grayscale;
   content: '\E806';
 }
-/* line 306, node_modules\bpmn-js-properties-panel\styles\properties.less */
+/* line 307, node_modules\bpmn-js-properties-panel\styles\properties.less */
 .bpp-field-description {
   margin-top: 5px;
   color: #999;
 }
-/* line 310, node_modules\bpmn-js-properties-panel\styles\properties.less */
+/* line 311, node_modules\bpmn-js-properties-panel\styles\properties.less */
 .bpp-field-description a {
   color: #3d8610;
   text-decoration: none;
 }
-/* line 314, node_modules\bpmn-js-properties-panel\styles\properties.less */
+/* line 315, node_modules\bpmn-js-properties-panel\styles\properties.less */
 .bpp-field-description a:hover {
   color: #52B415;
 }
@@ -432,15 +433,14 @@ label.bpp-hidden {
 .bpp-properties-group {
   padding: 6px 15px 6px 15px;
   position: relative;
-  max-height: 2000px;
   overflow: hidden;
   transition: max-height 0.218s ease-in-out, padding-top 0.218s ease-in-out, padding-bottom 0.218s ease-in-out;
 }
-/* line 10, node_modules\bpmn-js-properties-panel\styles\groups.less */
+/* line 9, node_modules\bpmn-js-properties-panel\styles\groups.less */
 .bpp-properties-group:empty {
   display: none;
 }
-/* line 14, node_modules\bpmn-js-properties-panel\styles\groups.less */
+/* line 13, node_modules\bpmn-js-properties-panel\styles\groups.less */
 .bpp-properties-group > .group-toggle {
   position: absolute;
   top: 0;
@@ -450,11 +450,11 @@ label.bpp-hidden {
   cursor: pointer;
   transition: background-color 0.218s linear;
 }
-/* line 22, node_modules\bpmn-js-properties-panel\styles\groups.less */
+/* line 21, node_modules\bpmn-js-properties-panel\styles\groups.less */
 .bpp-properties-group > .group-toggle:hover {
   background-color: #8fc071;
 }
-/* line 27, node_modules\bpmn-js-properties-panel\styles\groups.less */
+/* line 26, node_modules\bpmn-js-properties-panel\styles\groups.less */
 .bpp-properties-group > .group-label {
   font-weight: bolder;
   display: inline-block;
@@ -474,15 +474,15 @@ label.bpp-hidden {
 .bpp-properties-group > .group-label.bpp-hidden {
   display: none;
 }
-/* line 36, node_modules\bpmn-js-properties-panel\styles\groups.less */
+/* line 35, node_modules\bpmn-js-properties-panel\styles\groups.less */
 .bpp-properties-group:hover > .group-toggle {
   background-color: #ccc;
 }
-/* line 38, node_modules\bpmn-js-properties-panel\styles\groups.less */
+/* line 37, node_modules\bpmn-js-properties-panel\styles\groups.less */
 .bpp-properties-group:hover > .group-toggle:hover {
   background-color: #8fc071;
 }
-/* line 43, node_modules\bpmn-js-properties-panel\styles\groups.less */
+/* line 42, node_modules\bpmn-js-properties-panel\styles\groups.less */
 .bpp-properties-group.group-closed {
   max-height: 20px;
   border-top: none;
@@ -491,24 +491,24 @@ label.bpp-hidden {
   padding-top: 0;
   padding-bottom: 0;
 }
-/* line 51, node_modules\bpmn-js-properties-panel\styles\groups.less */
+/* line 50, node_modules\bpmn-js-properties-panel\styles\groups.less */
 .bpp-properties-group.group-closed > div {
   visibility: hidden;
 }
-/* line 55, node_modules\bpmn-js-properties-panel\styles\groups.less */
+/* line 54, node_modules\bpmn-js-properties-panel\styles\groups.less */
 .bpp-properties-group.group-closed > .group-label {
   margin-top: 2px;
   margin-bottom: 2px;
 }
-/* line 60, node_modules\bpmn-js-properties-panel\styles\groups.less */
+/* line 59, node_modules\bpmn-js-properties-panel\styles\groups.less */
 .bpp-properties-group.group-closed:hover > .group-label {
   color: #52B415;
 }
-/* line 65, node_modules\bpmn-js-properties-panel\styles\groups.less */
+/* line 64, node_modules\bpmn-js-properties-panel\styles\groups.less */
 .bpp-properties-group + .bpp-properties-group {
   border-top: 1px dotted #ccc;
 }
-/* line 69, node_modules\bpmn-js-properties-panel\styles\groups.less */
+/* line 68, node_modules\bpmn-js-properties-panel\styles\groups.less */
 .bpp-properties-group:last-child {
   padding-bottom: 9px;
 }
@@ -725,7 +725,7 @@ a:link {
 }
 /* line 114, styles/app.less */
 .buttons a.active {
-  opacity: 1.0;
+  opacity: 1;
 }
 /* line 119, styles/app.less */
 .properties-panel-parent {
