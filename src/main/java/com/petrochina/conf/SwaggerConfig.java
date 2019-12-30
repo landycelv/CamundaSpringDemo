@@ -31,8 +31,8 @@ public class SwaggerConfig {
                 .build()
                 .apiInfo(new ApiInfoBuilder()
                         .title("Camunda BPM与Spring Boot集成服务列表")
-                        .description("©2019 Copyright. Powered By skayliu.")
-                        .contact(new Contact("skayliu", "", "skay463@163.com"))
+                        .description("©2019 Copyright. Powered By mdm.petrochina.")
+                        .contact(new Contact("MDM", "", "MDM_SUPPORT@CNPC.COM.CN"))
                         .license("Camunda BPM 与 Spring Boot集成")
                         .build())
                 .useDefaultResponseMessages(false);
