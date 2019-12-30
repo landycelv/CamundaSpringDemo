@@ -10,4 +10,15 @@ public class ApplicationsController {
     public String modeler(){
         return "modeler";
     }
+
+    @RequestMapping(value="/defaultrestapi",method = RequestMethod.GET)
+    public String swagger(){
+        return "camunda-swagger-ui";
+    }
+
+
+    @RequestMapping(value="/restapi",method = RequestMethod.GET)
+    public String restapi(){
+        return "redirect:/swagger-ui.html";
+    }
 }
